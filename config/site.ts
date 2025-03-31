@@ -1,18 +1,62 @@
-export type SiteConfig = typeof siteConfig
+import { SiteConfig } from "@/types/nav"
 
-export const siteConfig = {
-  name: "Next.js",
+export const siteConfig: SiteConfig = {
+  name: "TennisPro Portal",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "The ultimate sports management app for professional tennis players.",
+  // Public navigation items (visible to all users)
   mainNav: [
+    {
+      title: "Home",
+      href: "/",
+    },
+    {
+      title: "Features",
+      href: "/#features",
+    },
+    {
+      title: "Membership",
+      href: "/#membership",
+    },
+    {
+      title: "About",
+      href: "/#about",
+    },
+    {
+      title: "Contact",
+      href: "/#contact",
+    },
+  ],
+  // Member navigation items (visible only to logged-in users)
+  memberNav: [
+    {
+      title: "Dashboard",
+      href: "/dashboard",
+    },
+    {
+      title: "Tournaments",
+      href: "/tournaments",
+    },
+    {
+      title: "Practice Courts",
+      href: "/practice-courts",
+    },
+    {
+      title: "Travel Booking",
+      href: "/travel-booking",
+    },
+    {
+      title: "Membership",
+      href: "/membership",
+    },
     {
       title: "Home",
       href: "/",
     },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+    twitter: "https://twitter.com/tennispro",
+    instagram: "https://instagram.com/tennispro",
+    contact: "/contact",
   },
 }

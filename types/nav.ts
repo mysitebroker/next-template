@@ -4,3 +4,15 @@ export interface NavItem {
   disabled?: boolean
   external?: boolean
 }
+
+export interface SiteConfig {
+  name: string
+  description: string
+  mainNav: NavItem[]
+  memberNav: NavItem[]
+  links: {
+    twitter: string
+    instagram: string
+    contact: string
+  }
+}

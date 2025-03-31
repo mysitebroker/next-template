@@ -7,12 +7,13 @@ import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
 
-interface MainNavProps {
+interface MemberMainNavProps {
   items?: NavItem[]
 }
 
-export function MainNav({ items = siteConfig.mainNav }: MainNavProps) {
+export function MemberMainNav({ items = siteConfig.memberNav }: MemberMainNavProps) {
   const pathname = usePathname()
+  
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="flex items-center space-x-2">
