@@ -34,20 +34,22 @@ export default function IndexPage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/dashboard"
-              className={buttonVariants({
-                size: "lg",
-                className: "bg-white text-black hover:bg-white/90 relative",
-              })}
+            className={buttonVariants({
+              variant: "default",
+              size: "lg",
+              className: "relative",
+            })}
             >
               <ButtonAnimation />
               Go to Dashboard
             </Link>
             <Link
               href="#features"
-              className={buttonVariants({
-                size: "lg",
-                className: "bg-white text-black hover:bg-white/90 relative",
-              })}
+            className={buttonVariants({
+              variant: "default",
+              size: "lg",
+              className: "relative",
+            })}
             >
               <ButtonAnimation />
               Explore Features
@@ -673,8 +675,9 @@ export default function IndexPage() {
           <Link
             href="/auth/register"
             className={buttonVariants({
+              variant: "default",
               size: "lg",
-              className: "bg-white text-black hover:bg-white/90",
+              className: "relative",
             })}
           >
             Start Your Free Trial
